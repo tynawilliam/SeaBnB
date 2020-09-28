@@ -8,22 +8,27 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      email: {
+      name: {
         allowNull: false,
         type: Sequelize.STRING(255),
+      },
+      city: {
+        allowNull: false,
+        type: Sequelize.STRING(255),
+      },
+      phone: {
+        allowNull: false,
+        type: Sequelize.BIGINT,
         unique: true,
       },
-      username: {
+      email: {
         allowNull: false,
-        type: Sequelize.STRING(255),
+        type: Sequelize.STRING,
         unique: true,
       },
       hashedPassword: {
         allowNull: false,
         type: Sequelize.STRING(60).BINARY,
-      },
-      tokenId: {
-        type: Sequelize.STRING(36),
       },
       createdAt: {
         allowNull: false,
@@ -35,7 +40,7 @@ module.exports = {
       }
     });
   },
-  down: (queryInterface) => {
+  down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('Users');
   }
 };
