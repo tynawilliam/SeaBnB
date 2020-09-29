@@ -10,6 +10,10 @@ const routes = require('./routes');
 
 const app = express();
 
+const apiRouter = require('./routes/api')
+app.use('/api', apiRouter)
+
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
