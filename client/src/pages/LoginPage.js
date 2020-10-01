@@ -5,7 +5,7 @@ import { login } from '../store/auth';
 
 function LoginPage() {
     const [email, setEmail] = useState(' ');
-    const [password, setPassword] = useState(' ');
+    const [password, setPassword] = useState('');
     const currentUserId = useSelector(state => state.auth.id);
     const dispatch = useDispatch();
 

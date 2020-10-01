@@ -28,9 +28,9 @@ function generateToken(user) {
 }
 
 function restoreUser(req, _res, next) {
-    // console.log('restore user')
+    console.log('restore user')
     const { token } = req.cookies;
-    // console.log(req.cookies);
+    console.log(req.cookies);
     if (!token) {
         const err = new AuthenticationError();
         return next(err);
