@@ -18,7 +18,6 @@ function App() {
     useEffect(() => {
         const loadUser = async () => {
             try {
-
                 const res = await fetch("/api/session");
                 if (res.ok) {
                     res.data = await res.json();
