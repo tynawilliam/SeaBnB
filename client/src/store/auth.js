@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 const SET_USER = 'auth/SET_USER';
 
 export const setUser = (user) => {
+    console.log(user)
     return {
         type: SET_USER,
         user,

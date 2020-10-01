@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Pages from './pages/Pages';
-import setUser from './store/auth'
+import { setUser } from './store/auth'
 
 
 // const store = configureStore();
