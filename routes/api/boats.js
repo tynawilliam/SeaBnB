@@ -10,3 +10,14 @@ router.get('/', asyncHandler(async function (_req, res, _next) {
 }));
 
 module.exports = router;
+
+router.get('/:id(\\d+)', asyncHandler(async (req, res, next) => {
+    const boat = await Boat.findByPk(req.params.id)
+    if(!boat) {
+        const err = new Error('Boat not found.');
+        err.status = 404;
+        next(err);
+        return;
+    }
+    res.json({ boat });
+}))

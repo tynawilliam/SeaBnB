@@ -1,0 +1,33 @@
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    padding-bottom: 150px;
+    color: wheat;
+}
+
+.searchBar input {
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: wheat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+
+.searchBar img{
+    margin-top: -45px;
+    margin-left: 400px;
+    height: 40px;
+    width: 40px;
+}
+
+.tagline {
+    margin-left: -1000px;
+    margin-top: 150px;
+    font-size: large;
+    font-weight: 700;
+    text-shadow: 1px 1px brown;
+}
