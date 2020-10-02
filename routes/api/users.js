@@ -8,21 +8,18 @@ const { generateToken } = require('../util/auth');
 const { jwtConfig: { expiresIn } } = require('../../config');
 
 const validateSignup = [
-    // check('firstName', 'must be a your first name')
+    // check('name', 'Name must be entered')
     //     .exists()
-    //     .isLength({ min: 2, max: 20 }),
-    // check('lastName', 'must be a your last name')
+    //     .isLength({ min: 2, max: 30 }),
+    // check('city', 'must be a valid city')
     //     .exists()
-    //     .isLength({ min: 2, max: 120 }),
-    // check('address', 'must be a valid US address')
-    //     .exists()
-    //     .isLength({ min: 5, max: 255 }),
+    //     .isLength({ min: 3, max: 50 }),
     // check('email', 'must be a valid email address')
     //     .exists()
     //     .isEmail(),
     // check('password', 'must be 6 or more characters')
     //     .exists()
-    //     .isLength({ min: 6, max: 70 }),
+    //     .isLength({ min: 6, max: 50 }),
 ];
 
 const router = express.Router();
