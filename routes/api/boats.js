@@ -20,4 +20,16 @@ router.get('/:id(\\d+)', asyncHandler(async (req, res, next) => {
     res.json({ boat });
 }))
 
+//name search will be replaced by city search after adding city column
+
+router.get('/:type', asyncHandler(async (req, res, next) => {
+    const getType = (req.params.type).toString()
+    const boats = await Boat.findAll({
+        where: {
+            type: getType
+        }
+    });
+    res.json({ boats });
+}))
+
 module.exports = router;
