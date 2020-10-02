@@ -1,0 +1,23 @@
+.navbar {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+
+img.logo {
+    margin-left: 20px;
+    height: 75px;
+}
+#logo {
+    color: brown;
+    font-size: xx-large;
+}
+
+.navbar a{
+    color: beige;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px brown;
+}

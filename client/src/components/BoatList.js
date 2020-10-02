@@ -17,6 +17,7 @@ function BoatList (props) {
     const boatComponents = boats.map((boat) => <Boat key={boat.id} boat={boat} />)
     return (
         <>
+            <h1>Hello There</h1>
             <h1>Boat List: </h1>
             {boatComponents}
         </>

@@ -3,6 +3,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Pages from './pages/Pages';
 import { setUser } from './store/auth'
+import Homepage from './components/Homepage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import './components/styling/app.css';
 
 
 // const store = configureStore();
@@ -35,9 +39,12 @@ function App() {
     if (loading) return null;
   return (
     <>
+        <Navbar />
+        {/* <Homepage />mv  */}
         <BrowserRouter>
             <Pages />
         </BrowserRouter>
+        <Footer />
     </>
   );
 }
