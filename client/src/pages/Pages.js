@@ -4,6 +4,7 @@ import LoginPage from './LoginPage';
 import UsersList from '../components/UsersList';
 import BoatList from '../components/BoatList';
 import Homepage from '../components/Homepage';
+import Profile from './Profile';
 
 export default function Pages(){
     return (
@@ -12,6 +13,7 @@ export default function Pages(){
             <Route path='/search' component={BoatList}/>
             <Route path='/login' component={LoginPage} />
             <Route path='/users' component={UsersList}/>
+            <Route path='/profile' component={Profile}/>
         </>
     )
 }

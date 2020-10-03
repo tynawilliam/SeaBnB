@@ -1,0 +1,91 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.tiles{
+    margin: auto;
+    display: grid;
+    width: 1000px;
+    justify-items: end;
+    grid-template-columns: repeat(2,350px);
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    background-color:white;
+    width: auto;
+    height: 600px;
+    padding: 0;
+}
+
+.tiles #tile1 {
+    margin-top: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tiles #tile1:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(78, 169, 197, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tiles #tile2 {
+    margin-top: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tiles #tile2:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(78, 169, 197, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tiles #tile3 {
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tiles #tile3:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(78, 169, 197, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tiles #tile4 {
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tiles #tile4:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(78, 169, 197, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bookings{
+    text-align: center;
+    right: 150px;
+    bottom: 570px;
+    width: 200px;
+    height: 550px;
+    position: relative;
+    float: right;
+    border-radius: 25px;
+    padding-right: 120px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

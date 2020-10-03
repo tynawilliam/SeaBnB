@@ -8,7 +8,7 @@ function Navbar() {
                 <a href='/'>SeaBnB</a>
                 <a href='/search'>Get a Boat</a>
                 <a href='/'>Become a Host</a>
-                <a href='/'>Profile</a>
+                <a href='/profile'>Profile</a>
 
             </div>
         </>

@@ -5,9 +5,11 @@
     height: 500px;
     padding-bottom: 150px;
     color: wheat;
+    position: relative;
 }
 
-.searchBar input {
+.searchForm input {
+    margin: 0;
     text-align: center;
     width: 500px;
     height: 50px;
@@ -17,11 +19,31 @@
     border: none;
 }
 
-.searchBar img{
+.searchForm input:focus{
+    outline: none;
+    background-color: burlywood;
+    font-weight: bold;
+    font-size: 20px;
+    color: brown;
+    transform: scale(1.1);
+}
+
+.searchForm input:hover{
+    outline: none;
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+.button{
+    position: absolute;
     margin-top: -45px;
-    margin-left: 400px;
+    margin-left: 440px;
     height: 40px;
     width: 40px;
+}
+
+.button:focus{
+    outline: none;
 }
 
 .tagline {

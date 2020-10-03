@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { login } from '../store/auth';
+import '../components/styling/login.css';
 
 function LoginPage() {
     const [email, setEmail] = useState(' ');
@@ -19,25 +20,27 @@ function LoginPage() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
-                Email
-                <input
-                type="email"
-                name="email"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                />
-            </label>
-            <label>
-                Password
-                <input
-                type="password"
-                name="password"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                />
-            </label>
-            <button type="submit">Log In</button>
+            <div className='formFields'>
+                <label>
+                    Email
+                    <input
+                    type="email"
+                    name="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    />
+                </label>
+                <label>
+                    Password
+                    <input
+                    type="password"
+                    name="password"
+                    value={password}
+                    onChange={e => setPassword(e.target.value)}
+                    />
+                </label>
+                <button type="submit">Log In</button>
+            </div>
         </form>
     )
 }
